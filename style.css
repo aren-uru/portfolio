@@ -1,7 +1,7 @@
 body{
     margin:0px;
     padding:0px;
-    background-color:#f2f2f2;
+    background-color:#ffffff;
 }
 
 .title{
@@ -22,26 +22,28 @@ body{
     position:relative;
 }
 
-.page1{
+.page{
     position:absolute;
+    left:50px;
+    color:#ffffff;
+    font-size:25px;
+}
+#page1{
     top:70px;
-    left:50px;
-    color:white;
-    font-size:25px;
 }
 
-.page2{
-    position:absolute;
+#page2{
     top:140px;
-    left:50px;
-    color:white;
-    font-size:25px;
 }
 
-.page3{
-    position:absolute;
+#page3{
     top:210px;
-    left:50px;
-    color:white;
-    font-size:25px;
+}
+
+.subtitle{
+    position:relative;
+    text-align:center;
+    top:80px;
+    color:#000000;
+    font-size:40px;
 }
