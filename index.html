@@ -9,25 +9,48 @@
         <div id="loading">
             <div id="loading_logo"><img src="img/ローディング画像.png" alt="" class="fadeup"></div>
         </div>
-        <h1 class="title">Port folio</h1>
-        <p class="page" id="page1">Top</p>
-        <p class="page" id="page2">Introduction</p>
-        <p class="page" id="page3">Skill</p>
+        <div class="title">
+            <img src="https://github.com/aren-uru/portfolio/blob/main/img/%E8%83%8C%E6%99%AF%E7%94%BB%E5%83%8F.jpg?raw=true">
+            <h1>Port folio</h1>
+            <p class="page" id="page1">Top</p>
+            <p class="page" id="page2">Introduction</p>
+            <p class="page" id="page3">Language</p>
+            <p class="page" id="page4">Contact</p>
+        </div>
         <h2 class="subtitle" id="subtitle1">Introduction</h2>
         <div class="box" id="box1">
         <li class="intro" id="intro1">名前：漆山亜廉</li>
         <li class="intro" id="intro2">大学：東洋大学情報連携学部</li>
         <li class="intro" id="intro3">学年：２年</li>
-        <li class="intro" id="intro4">活動：大学内の授業を通してGitを用いたWebアプリケーション開発経験有り。現在では、個人塾の講師をしながらJupyterlabを用いて塾の経理システムを作成中。</li>
+        <li class="intro" id="intro4">活動：大学内の授業を通してGitを用いたWebアプリケーション開発経験が数回有り。現在では、個人塾の講師をしながらJupyterlabを用いて塾の経理システムを作成中。</li>
         </div>
-        <h2 class="subtitle" id="subtitle2">Skill</h2>
-        <div class="mini_box" id="box2">
-            <h3 class="skill" id="front">フロントエンド</h3>
-        </div>
-        <div class="mini_box" id="box3">
-            <h3 class="skill" id="back">バックエンド</h3>
-        </div>
+
+        <h2 class="subtitle" id="subtitle2">Language
+            <div class="mini_box" id="box2">
+                <h3 class="language" id="front">フロントエンド</h3>
+                <canvas class="chart" id="chart1"></canvas>
+            </div>
+            <div class="mini_box" id="box3">
+                <h3 class="language" id="back">バックエンド</h3>
+                <canvas class="chart" id="chart2"></canvas>
+            </div>
+            <div class="mini_box" id="box4">
+                <h3 class="language" id="other">その他（仕様経験のあるもの）</h3>
+                <ul class="others">
+                <li>MySQL</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Django</li>
+                <li>Pillow</li>
+                </ul>
+            </div>
+        </h2>
+
+        <h2 class="subtitle" id="subtitle3">Contact</h2>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
         <script src="js/loading.js"></script>
+        <script src="js/graph.js"></script>
     </body>
 </html>

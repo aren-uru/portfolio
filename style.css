@@ -9,6 +9,9 @@
 
 #loading_logo{
     position: absolute;
+    display:flex;
+    align-items:center;
+
 }
 
 #loading_logo img{
@@ -23,7 +26,7 @@
 
 .fadeup{
     animation-name: fadeupanime;
-    animation-duration:0.5s;
+    animation-duration:0.8s;
     animation-fill-mode:forwards;
     opacity: 0;
 }
@@ -47,39 +50,56 @@ body{
 }
 
 .title{
-    background-image: url(https://github.com/aren-uru/portfolio/blob/main/img/%E8%83%8C%E6%99%AF%E7%94%BB%E5%83%8F.jpg?raw=true);
+    position:relative;
+}
+
+.title img{
     background-size:cover;
     background-position:top center;
     background-repeat:no-repeat;
     vertical-align:bottom;
-    margin:0px;
+    margin-bottom:80px;
     padding:0px;
-    width:100%;
-    height:576px;
-    line-height:500px;
+    width:100vw;
+    height:100vh;
+}
+
+.title h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
     text-align:center;
     font-family:cursive;
     font-size:75px;
     color:#ffffff;
-    position:relative;
 }
 
-.page{
+.title .page{
     position:absolute;
-    left:50px;
     color:#ffffff;
     font-size:25px;
-}
-#page1{
-    top:70px;
+    left:5%;
 }
 
-#page2{
-    top:140px;
+.title #page1{
+    top:15%;
 }
 
-#page3{
-    top:210px;
+.title #page2{
+    top:25%;
+}
+
+.title #page3{
+    top:35%;
+}
+
+.title #page4{
+    top:45%;
 }
 
 .box{
@@ -100,36 +120,31 @@ body{
 .mini_box{
     position:absolute;
     margin:2em auto;
-    padding:1em;
+    padding:3px;
     width:40%;
-    height:250px;
+    height:300px;
+    top:50px;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 2px #ccc;
 }
 
 #box2{
-    top:1100px;
+    top:100px;
     left:4%;
+    height:300px;
 }
 
 #box3{
-    top:1100px;
+    top:100px;
     right:4%;
+    height:300px;
 }
 
-.skill{
-    position:relative;
-}
-
-.mini_box #front{
-    text-align:center;
-    line-height:40%;
-}
-
-.mini_box #back{
-    text-align:center;
-    line-height:40%;
+#box4{
+    top:500px;
+    left:30%;
+    height:300px;
 }
 
 .subtitle{
@@ -143,7 +158,13 @@ body{
 }
 
 #subtitle2{
-    top:230px;
+    position:relative;
+    top:100px;
+}
+
+#subtitle3{
+    position:relative;
+    top:1000px;
 }
 
 .intro{
@@ -154,3 +175,29 @@ body{
     font-size:20px;
 }
 
+.language{
+    text-align:center;
+    font-size:20px;
+}
+
+.others{
+    column-count: 2;
+    text-align:left;
+    font-size:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20%;
+   }
+
+.chart{
+    position: absolute;
+    top: 50px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+}
