@@ -2,7 +2,7 @@ var stroke;
 stroke = new Vivus('mask', {
     start:'manual',
     type: 'scenario-sync',
-    duration: 12,
+    duration: 15,
     forceRender: false,
     animTimingFunction:Vivus.EASE,
 },
