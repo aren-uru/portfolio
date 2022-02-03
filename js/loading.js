@@ -2,7 +2,7 @@ var stroke;
 stroke = new Vivus('mask', {
     start:'manual',
     type: 'scenario-sync',
-    duration: 30,
+    duration: 20,
     forceRender: false,
     animTimingFunction:Vivus.EASE,
 },
@@ -12,7 +12,7 @@ function(){
 );
 
 $(window).on('load',function(){
-  $("#loading").delay(9000).fadeOut('slow');
-	$("#loading_logo").delay(9000).fadeOut('slow');
-        stroke.play();//SVGアニメーションの実行
+  $("#loading").delay(100).fadeOut('slow');
+	$("#loading_logo").delay(100).fadeOut('slow');
+        stroke.play();
 });
