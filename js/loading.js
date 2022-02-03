@@ -12,7 +12,7 @@ function(){
 );
 
 $(window).on('load',function(){
-  $("#loading").delay(100).fadeOut('slow');
-	$("#loading_logo").delay(100).fadeOut('slow');
+  $("#loading").delay(7000).fadeOut('slow');
+	$("#loading_logo").delay(7000).fadeOut('slow');
         stroke.play();
 });
